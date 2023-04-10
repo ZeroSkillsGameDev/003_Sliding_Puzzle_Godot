@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cw5vwt7inocbt" path="res://img/tile14.png" id="14_hdicr"]
 [ext_resource type="Texture2D" uid="uid://dfdan8b3pp0wl" path="res://img/tile15.png" id="15_umdf5"]
 [ext_resource type="Texture2D" uid="uid://s7ehkex02vjq" path="res://img/empty.png" id="17_awbc2"]
-[ext_resource type="FontFile" uid="uid://ka785ajyc7t4" path="res://fonts/PressStart2P-Regular.ttf" id="18_7ubmv"]
+[ext_resource type="FontFile" uid="uid://2vmfpwifbtoa" path="res://fonts/PressStart2P-Regular.ttf" id="18_7ubmv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xcg20"]
 size = Vector2(1000, 1000)

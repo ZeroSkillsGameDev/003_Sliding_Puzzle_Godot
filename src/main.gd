@@ -16,12 +16,16 @@ func start_game():
 	counter = 0
 
 func shuffle_tiles():
-	for u in range(0,100):
-		var tile_a = randi() % 16
+	var previous = 99
+	var previous_1 = 98
+	for u in range(0,1000):
+		var tile_a = randi() % 16 and tile != previous and tile != previous_1:
 		if tiles[tile_a] != $Tile16:
 			var rows = int(tiles[tile_a].position.y / 250)
 			var cols = int(tiles[tile_a].position.x / 250)
 			check_neighbours(rows,cols)
+			previous_1 = previous
+			previous = tile
 
 func _process(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and mouse:
@@ -43,7 +47,7 @@ func check_neighbours(rows,cols):
 		var new_pos = tiles[tile_pos].position
 		if rows < 3:
 			new_pos.y += 250
-			empty = find_empty(new_pos,tile_pos)
+			empty = find_empty(new_pos,tile_pos)		
 			new_pos.y -= 250
 		if rows > 0:
 			new_pos.y -= 250
