@@ -1,0 +1,110 @@
+[gd_scene load_steps=20 format=3 uid="uid://bf7o7mi8ykl8u"]
+
+[ext_resource type="Script" path="res://src/main.gd" id="1_2llnu"]
+[ext_resource type="Texture2D" uid="uid://b2y3dx10p1kfd" path="res://img/tile1.png" id="1_jp6wq"]
+[ext_resource type="Texture2D" uid="uid://c78yenthcfpeq" path="res://img/tile2.png" id="2_gfcx5"]
+[ext_resource type="Texture2D" uid="uid://8mie2ln4bk5j" path="res://img/tile3.png" id="3_fks61"]
+[ext_resource type="Texture2D" uid="uid://c2gww4k3vx4lw" path="res://img/tile4.png" id="4_mr4sm"]
+[ext_resource type="Texture2D" uid="uid://c2brgm7ngbx8x" path="res://img/tile5.png" id="5_l27uv"]
+[ext_resource type="Texture2D" uid="uid://crbgav4tn6ati" path="res://img/tile6.png" id="6_4vkrq"]
+[ext_resource type="Texture2D" uid="uid://ty6btydqn2l1" path="res://img/tile7.png" id="7_nb733"]
+[ext_resource type="Texture2D" uid="uid://c4a5m7y0wcnr" path="res://img/tile8.png" id="8_7b50y"]
+[ext_resource type="Texture2D" uid="uid://wqxvb52ohgv6" path="res://img/tile9.png" id="9_tes4j"]
+[ext_resource type="Texture2D" uid="uid://dttu5lrgjkda5" path="res://img/tile10.png" id="10_h1jmi"]
+[ext_resource type="Texture2D" uid="uid://bbnxs8ixmhwpc" path="res://img/tile11.png" id="11_tjtcw"]
+[ext_resource type="Texture2D" uid="uid://ccqeflfpfx2pr" path="res://img/tile12.png" id="12_6cyv7"]
+[ext_resource type="Texture2D" uid="uid://bwsuheokvkcuj" path="res://img/tile13.png" id="13_kheep"]
+[ext_resource type="Texture2D" uid="uid://cssax2c816bsm" path="res://img/tile14.png" id="14_hdicr"]
+[ext_resource type="Texture2D" uid="uid://d4dbewde2vs5x" path="res://img/tile15.png" id="15_umdf5"]
+[ext_resource type="Texture2D" uid="uid://cooi8fvjwntlt" path="res://img/empty.png" id="17_awbc2"]
+[ext_resource type="FontFile" uid="uid://ka785ajyc7t4" path="res://fonts/PressStart2P-Regular.ttf" id="18_7ubmv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xcg20"]
+size = Vector2(1000, 1000)
+
+[node name="main" type="Area2D"]
+script = ExtResource("1_2llnu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(500, 500)
+shape = SubResource("RectangleShape2D_xcg20")
+
+[node name="Tile1" type="Sprite2D" parent="."]
+position = Vector2(125, 125)
+texture = ExtResource("1_jp6wq")
+
+[node name="Tile2" type="Sprite2D" parent="."]
+position = Vector2(375, 125)
+texture = ExtResource("2_gfcx5")
+
+[node name="Tile3" type="Sprite2D" parent="."]
+position = Vector2(625, 125)
+texture = ExtResource("3_fks61")
+
+[node name="Tile4" type="Sprite2D" parent="."]
+position = Vector2(875, 125)
+texture = ExtResource("4_mr4sm")
+
+[node name="Tile5" type="Sprite2D" parent="."]
+position = Vector2(125, 375)
+texture = ExtResource("5_l27uv")
+
+[node name="Tile6" type="Sprite2D" parent="."]
+position = Vector2(375, 375)
+texture = ExtResource("6_4vkrq")
+
+[node name="Tile7" type="Sprite2D" parent="."]
+position = Vector2(625, 375)
+texture = ExtResource("7_nb733")
+
+[node name="Tile8" type="Sprite2D" parent="."]
+position = Vector2(875, 375)
+texture = ExtResource("8_7b50y")
+
+[node name="Tile9" type="Sprite2D" parent="."]
+position = Vector2(125, 625)
+texture = ExtResource("9_tes4j")
+
+[node name="Tile10" type="Sprite2D" parent="."]
+position = Vector2(375, 625)
+texture = ExtResource("10_h1jmi")
+
+[node name="Tile11" type="Sprite2D" parent="."]
+position = Vector2(625, 625)
+texture = ExtResource("11_tjtcw")
+
+[node name="Tile12" type="Sprite2D" parent="."]
+position = Vector2(875, 625)
+texture = ExtResource("12_6cyv7")
+
+[node name="Tile13" type="Sprite2D" parent="."]
+position = Vector2(125, 875)
+texture = ExtResource("13_kheep")
+
+[node name="Tile14" type="Sprite2D" parent="."]
+position = Vector2(375, 875)
+texture = ExtResource("14_hdicr")
+
+[node name="Tile15" type="Sprite2D" parent="."]
+position = Vector2(625, 875)
+texture = ExtResource("15_umdf5")
+
+[node name="Tile16" type="Sprite2D" parent="."]
+position = Vector2(875, 875)
+texture = ExtResource("17_awbc2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 144.0
+offset_top = 400.0
+offset_right = 864.0
+offset_bottom = 649.0
+theme_override_colors/font_color = Color(0.968627, 0.490196, 0.133333, 1)
+theme_override_colors/font_outline_color = Color(0.313726, 0.294118, 0.894118, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("18_7ubmv")
+theme_override_font_sizes/font_size = 80
+text = "you won 
+in 20 
+movements"
+horizontal_alignment = 1
+vertical_alignment = 1
