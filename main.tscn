@@ -1,110 +1,93 @@
-[gd_scene load_steps=20 format=3 uid="uid://bf7o7mi8ykl8u"]
+[gd_scene load_steps=19 format=3 uid="uid://cjrohpooys7ow"]
 
-[ext_resource type="Script" path="res://src/main.gd" id="1_2llnu"]
-[ext_resource type="Texture2D" uid="uid://cup5l6pddxp7d" path="res://img/tile1.png" id="1_jp6wq"]
-[ext_resource type="Texture2D" uid="uid://cb0aklqli6hee" path="res://img/tile2.png" id="2_gfcx5"]
-[ext_resource type="Texture2D" uid="uid://uwjqcss521ey" path="res://img/tile3.png" id="3_fks61"]
-[ext_resource type="Texture2D" uid="uid://cycalbhhrjvdf" path="res://img/tile4.png" id="4_mr4sm"]
-[ext_resource type="Texture2D" uid="uid://cwg1kglfrosme" path="res://img/tile5.png" id="5_l27uv"]
-[ext_resource type="Texture2D" uid="uid://cnyg3s35ab7wn" path="res://img/tile6.png" id="6_4vkrq"]
-[ext_resource type="Texture2D" uid="uid://2xnrciwqebus" path="res://img/tile7.png" id="7_nb733"]
-[ext_resource type="Texture2D" uid="uid://bsqm55kr63ud" path="res://img/tile8.png" id="8_7b50y"]
-[ext_resource type="Texture2D" uid="uid://lsuqc0plyd17" path="res://img/tile9.png" id="9_tes4j"]
-[ext_resource type="Texture2D" uid="uid://bmyfwn4irxtaw" path="res://img/tile10.png" id="10_h1jmi"]
-[ext_resource type="Texture2D" uid="uid://blmaj74b8j4n5" path="res://img/tile11.png" id="11_tjtcw"]
-[ext_resource type="Texture2D" uid="uid://d3crcdsx1s3cw" path="res://img/tile12.png" id="12_6cyv7"]
-[ext_resource type="Texture2D" uid="uid://na0y0c0edqij" path="res://img/tile13.png" id="13_kheep"]
-[ext_resource type="Texture2D" uid="uid://cw5vwt7inocbt" path="res://img/tile14.png" id="14_hdicr"]
-[ext_resource type="Texture2D" uid="uid://dfdan8b3pp0wl" path="res://img/tile15.png" id="15_umdf5"]
-[ext_resource type="Texture2D" uid="uid://s7ehkex02vjq" path="res://img/empty.png" id="17_awbc2"]
-[ext_resource type="FontFile" uid="uid://2vmfpwifbtoa" path="res://fonts/PressStart2P-Regular.ttf" id="18_7ubmv"]
+[ext_resource type="Script" path="res://src/main.gd" id="1_fshg2"]
+[ext_resource type="Texture2D" uid="uid://cup5l6pddxp7d" path="res://img/tile1.png" id="1_glx6w"]
+[ext_resource type="Texture2D" uid="uid://cb0aklqli6hee" path="res://img/tile2.png" id="2_gm01w"]
+[ext_resource type="Texture2D" uid="uid://uwjqcss521ey" path="res://img/tile3.png" id="3_58xw1"]
+[ext_resource type="Texture2D" uid="uid://cycalbhhrjvdf" path="res://img/tile4.png" id="4_3pnlv"]
+[ext_resource type="Texture2D" uid="uid://cwg1kglfrosme" path="res://img/tile5.png" id="5_8vnnq"]
+[ext_resource type="Texture2D" uid="uid://cnyg3s35ab7wn" path="res://img/tile6.png" id="6_tmj27"]
+[ext_resource type="Texture2D" uid="uid://2xnrciwqebus" path="res://img/tile7.png" id="7_2pkyp"]
+[ext_resource type="Texture2D" uid="uid://bsqm55kr63ud" path="res://img/tile8.png" id="8_bcjsd"]
+[ext_resource type="Texture2D" uid="uid://lsuqc0plyd17" path="res://img/tile9.png" id="9_pa7hw"]
+[ext_resource type="Texture2D" uid="uid://bmyfwn4irxtaw" path="res://img/tile10.png" id="10_c7yih"]
+[ext_resource type="Texture2D" uid="uid://blmaj74b8j4n5" path="res://img/tile11.png" id="11_76s57"]
+[ext_resource type="Texture2D" uid="uid://d3crcdsx1s3cw" path="res://img/tile12.png" id="12_r3lwq"]
+[ext_resource type="Texture2D" uid="uid://na0y0c0edqij" path="res://img/tile13.png" id="13_48h5h"]
+[ext_resource type="Texture2D" uid="uid://cw5vwt7inocbt" path="res://img/tile14.png" id="14_reg5l"]
+[ext_resource type="Texture2D" uid="uid://dfdan8b3pp0wl" path="res://img/tile15.png" id="15_mlh55"]
+[ext_resource type="Texture2D" uid="uid://s7ehkex02vjq" path="res://img/empty.png" id="16_uyd70"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xcg20"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bac8"]
 size = Vector2(1000, 1000)
 
-[node name="main" type="Area2D"]
-script = ExtResource("1_2llnu")
+[node name="Main" type="Area2D"]
+script = ExtResource("1_fshg2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(500, 500)
-shape = SubResource("RectangleShape2D_xcg20")
+shape = SubResource("RectangleShape2D_3bac8")
 
 [node name="Tile1" type="Sprite2D" parent="."]
 position = Vector2(125, 125)
-texture = ExtResource("1_jp6wq")
+texture = ExtResource("1_glx6w")
 
 [node name="Tile2" type="Sprite2D" parent="."]
 position = Vector2(375, 125)
-texture = ExtResource("2_gfcx5")
+texture = ExtResource("2_gm01w")
 
 [node name="Tile3" type="Sprite2D" parent="."]
 position = Vector2(625, 125)
-texture = ExtResource("3_fks61")
+texture = ExtResource("3_58xw1")
 
 [node name="Tile4" type="Sprite2D" parent="."]
 position = Vector2(875, 125)
-texture = ExtResource("4_mr4sm")
+texture = ExtResource("4_3pnlv")
 
 [node name="Tile5" type="Sprite2D" parent="."]
 position = Vector2(125, 375)
-texture = ExtResource("5_l27uv")
+texture = ExtResource("5_8vnnq")
 
 [node name="Tile6" type="Sprite2D" parent="."]
 position = Vector2(375, 375)
-texture = ExtResource("6_4vkrq")
+texture = ExtResource("6_tmj27")
 
 [node name="Tile7" type="Sprite2D" parent="."]
 position = Vector2(625, 375)
-texture = ExtResource("7_nb733")
+texture = ExtResource("7_2pkyp")
 
 [node name="Tile8" type="Sprite2D" parent="."]
 position = Vector2(875, 375)
-texture = ExtResource("8_7b50y")
+texture = ExtResource("8_bcjsd")
 
 [node name="Tile9" type="Sprite2D" parent="."]
 position = Vector2(125, 625)
-texture = ExtResource("9_tes4j")
+texture = ExtResource("9_pa7hw")
 
 [node name="Tile10" type="Sprite2D" parent="."]
 position = Vector2(375, 625)
-texture = ExtResource("10_h1jmi")
+texture = ExtResource("10_c7yih")
 
 [node name="Tile11" type="Sprite2D" parent="."]
 position = Vector2(625, 625)
-texture = ExtResource("11_tjtcw")
+texture = ExtResource("11_76s57")
 
 [node name="Tile12" type="Sprite2D" parent="."]
 position = Vector2(875, 625)
-texture = ExtResource("12_6cyv7")
+texture = ExtResource("12_r3lwq")
 
 [node name="Tile13" type="Sprite2D" parent="."]
 position = Vector2(125, 875)
-texture = ExtResource("13_kheep")
+texture = ExtResource("13_48h5h")
 
 [node name="Tile14" type="Sprite2D" parent="."]
 position = Vector2(375, 875)
-texture = ExtResource("14_hdicr")
+texture = ExtResource("14_reg5l")
 
 [node name="Tile15" type="Sprite2D" parent="."]
 position = Vector2(625, 875)
-texture = ExtResource("15_umdf5")
+texture = ExtResource("15_mlh55")
 
 [node name="Tile16" type="Sprite2D" parent="."]
 position = Vector2(875, 875)
-texture = ExtResource("17_awbc2")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 144.0
-offset_top = 400.0
-offset_right = 864.0
-offset_bottom = 649.0
-theme_override_colors/font_color = Color(0.968627, 0.490196, 0.133333, 1)
-theme_override_colors/font_outline_color = Color(0.313726, 0.294118, 0.894118, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("18_7ubmv")
-theme_override_font_sizes/font_size = 80
-text = "you won 
-in 20 
-movements"
-horizontal_alignment = 1
-vertical_alignment = 1
+texture = ExtResource("16_uyd70")
